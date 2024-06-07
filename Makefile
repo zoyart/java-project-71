@@ -18,4 +18,5 @@ test:
 	./gradlew test
 
 test-report:
+	./gradlew test
 	./gradlew jacocoTestReport

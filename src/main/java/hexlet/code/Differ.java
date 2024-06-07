@@ -36,7 +36,7 @@ class Differ {
                 }
             } else if (values1.containsKey(item)) {
                 valuesDiff.put("- " + item, value1);
-            } else if (values2.containsKey(item)) {
+            } else {
                 valuesDiff.put("+ " + item, value2);
             }
         });
