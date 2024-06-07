@@ -4,12 +4,13 @@ import org.apache.commons.lang3.builder.Diff;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.nio.file.FileSystemException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestDiffer {
     @Test
-    public void getFileTextTest() throws IOException, SecurityException {
+    public void getFileTextTest() throws IOException {
         // TODO: как сделать проверку абсолютного пути?
         String absolutePath = "";
         String relativePath = "src/test/resources/testData/file1.json";
@@ -27,7 +28,7 @@ public class TestDiffer {
     }
 
     @Test
-    public void generateTest() throws IOException, SecurityException {
+    public void generateTest() throws IOException {
         String path1 = "src/test/resources/testData/file1.json";
         String path2 = "src/test/resources/testData/file2.json";
         String expected1 = "{\n" +
