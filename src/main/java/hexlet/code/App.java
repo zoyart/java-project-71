@@ -6,7 +6,6 @@ import picocli.CommandLine.Parameters;
 import picocli.CommandLine.Option;
 
 import java.io.IOException;
-import java.nio.file.FileSystemException;
 import java.util.concurrent.Callable;
 
 @Command(name = "gendiff",

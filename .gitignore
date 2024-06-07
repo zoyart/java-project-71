@@ -1,5 +1,14 @@
-build
-.idea
+# Ignore Gradle project-specific cache directory
 .gradle
-.github
-.gitignore
+
+# Ignore Gradle build output directory
+build
+
+**/logs/
+
+.settings
+bin
+.project*
+.classpath
+.idea/
+.factorypath
