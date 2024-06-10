@@ -7,7 +7,11 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.Files;
-import java.util.*;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.LinkedHashMap;
 
 class Differ {
     public static String generate(String path1, String path2) throws IOException {
@@ -18,7 +22,7 @@ class Differ {
         Map<String, Object> values1 = mapper.readValue(textPath1, Map.class);
         Map<String, Object> values2 = mapper.readValue(textPath2, Map.class);
 
-        // Сбор уникальных ключей из двух коллекций их сортировка и перебор
+        // Сбор уникальных ключей из двух коллекций, их сортировка и формирование текста по правилам
         List<String> uniqueValues = new LinkedList<>(CollectionUtils.union(values1.keySet(), values2.keySet()));
         uniqueValues.sort(Comparator.naturalOrder());
 

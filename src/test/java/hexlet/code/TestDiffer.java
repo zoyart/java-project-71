@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TestDiffer {
     @Test
@@ -29,7 +30,9 @@ public class TestDiffer {
         assertEquals(expected1, actual2);
 
         // We catch the IOException: file not found
-        assertThrows(IOException.class, () -> Differ.generate("src/test/resources/testData/notFile1.json", "src/test/resources/testData/notFile2.json"));
+        assertThrows(IOException.class, () -> {
+            Differ.generate("src/test/resources/testData/notFile1.json", "src/test/resources/testData/notFile2.json");
+        });
     }
 
     @Test

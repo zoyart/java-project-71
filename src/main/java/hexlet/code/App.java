@@ -23,7 +23,7 @@ class App implements Callable<Integer> {
     String format;
 
     public static void main(String[] args) {
-        int exitCode = CommandLine.call(new App(), args);
+        int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }
 
@@ -32,7 +32,9 @@ class App implements Callable<Integer> {
         try {
             String difference = Differ.generate(filePath1, filePath2);
             System.out.println(difference);
-        } catch (IOException e) { System.out.println("Error: " + e); }
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
+        }
 
         return 0;
     }
