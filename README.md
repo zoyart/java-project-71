@@ -1,4 +1,4 @@
-![Actions Status](https://github.com/zoyart/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zoyart/java-project-71/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/4a8a2accd783a1122f43/maintainability)](https://codeclimate.com/github/zoyart/java-project-71/maintainability)
+![Actions Status](https://github.com/zoyart/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zoyart/java-project-71/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/4a8a2accd783a1122f43/maintainability)](https://codeclimate.com/github/zoyart/java-project-71/maintainability) ![Actions Status](https://github.com/OWNER/REPOSITORY/actions/workflows/WORKFLOW-FILE/badge.svg)
 # Why is it needed?
 The program compares two “json” documents and displays a report in one of the selected formats.
 # Usage

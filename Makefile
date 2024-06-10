@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := build-run
+
 build:
 	./gradlew clean build
 
@@ -20,3 +22,5 @@ test:
 test-report:
 	./gradlew test
 	./gradlew jacocoTestReport
+
+.PHONY: build
