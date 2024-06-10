@@ -9,8 +9,8 @@ The program compares two “json” documents and displays a report in one of th
 When starting the program, you must specify two mandatory parameters - the path to the first and second "json" files that need to be compared.
 ## Options
 ### Use without options
-Default output is "plain" text.
+Default output is "stylish" text.
 ### -h
 Displays help to the console.
-### -f=plain/json/xml
+### -f=plain/json/stylish
 Selecting the format for outputting the result.
