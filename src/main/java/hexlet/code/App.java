@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import lombok.Getter;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Parameters;
@@ -12,6 +13,7 @@ import java.util.concurrent.Callable;
         mixinStandardHelpOptions = true,
         version = "gendiff 1.0",
         description = "Compares two configuration files and shows a difference.")
+@Getter
 class App implements Callable<Integer> {
     @Parameters(paramLabel = "filePath1", description = "path to first file")
     String filePath1;
