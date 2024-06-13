@@ -10,16 +10,16 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 public class Parser {
-    public static Map<String, Object> parse(String filePath) throws IOException {
+    public static Map<String, Object> parse(String filePath) throws IOException, IllegalArgumentException {
         String text = getFileText(filePath);
         String fileExtension = getFileExtension(filePath);
         ObjectMapper mapper;
 
-        if (fileExtension.equals("json")) {
-            mapper = new ObjectMapper();
-        } else {
-            mapper = new YAMLMapper();
-        }
+        mapper = switch (fileExtension) {
+            case "json" -> new ObjectMapper();
+            case "yml" -> new YAMLMapper();
+            default -> throw new IllegalArgumentException("Unsupported file type: " + fileExtension);
+        };
 
         return mapper.readValue(text, Map.class);
     }

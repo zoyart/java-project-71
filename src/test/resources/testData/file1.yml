@@ -1,4 +1,6 @@
-host: hexlet.io
-timeout: 50
-proxy: 123.234.53.22
-follow: false
+"setting1": "Some value"
+"setting2": 200
+"setting3": true
+"numbers1": [1, 2, 3, 4]
+"default": null
+"chars1": ["a", "b", "c"]
