@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.Getter;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
@@ -7,7 +8,6 @@ import picocli.CommandLine.Parameters;
 import picocli.CommandLine.Option;
 
 import java.io.IOException;
-import java.util.Map;
 import java.util.concurrent.Callable;
 
 @Command(name = "gendiff",

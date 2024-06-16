@@ -1,9 +1,11 @@
 package hexlet.code;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.io.IOException;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.LinkedList;
@@ -16,37 +18,54 @@ class Differ {
                                                                                     IllegalArgumentException {
         Map<String, Object> values1 = Parser.parse(path1);
         Map<String, Object> values2 = Parser.parse(path2);
-        List<String> uniqueValues = new LinkedList<>(CollectionUtils.union(values1.keySet(), values2.keySet()));
-        Map<String, Map<String, Object>> diffData = new LinkedHashMap<>();
 
+        List<String> uniqueValues = new LinkedList<>(CollectionUtils.union(values1.keySet(), values2.keySet()));
         uniqueValues.sort(Comparator.naturalOrder());
 
+        Map<String, Map<String, Object>> differData = new LinkedHashMap<>();
+
         uniqueValues.forEach(key -> {
-            Object value1 = values1.get(key);
-            Object value2 = values2.get(key);
-            Map<String, Object> data = new LinkedHashMap<>();
-            if (values1.containsKey(key) && values2.containsKey(key)) {
-                if (Objects.equals(value1, value2)) {
-                    data.put("status", "immutable");
-                    data.put("value", value1);
-                    diffData.put(key, data);
-                } else {
-                    data.put("status", "updated");
-                    data.put("oldValue", value1);
-                    data.put("newValue", value2);
-                    diffData.put(key, data);
-                }
-            } else if (values1.containsKey(key)) {
-                data.put("status", "removed");
-                data.put("value", value1);
-                diffData.put(key, data);
-            } else {
-                data.put("status", "added");
-                data.put("value", value2);
-                diffData.put(key, data);
-            }
+            differData.put(key, generateKeyData(key, values1, values2));
         });
 
-        return Formatter.format(diffData, format);
+        return Formatter.format(differData, format);
+    }
+
+    public static boolean isComplexValue(Object value) {
+        return value instanceof LinkedHashMap<?,?> ||
+                value instanceof LinkedList<?> ||
+                value instanceof ArrayList<?>;
+    }
+
+    public static Map<String, Object> generateKeyData(String key,
+                                                      Map<String, Object> values1,
+                                                      Map<String, Object> values2) {
+        Object value1 = values1.get(key);
+        Object value2 = values2.get(key);
+        Map<String, Object> keyData = new LinkedHashMap<>();
+
+        if (values1.containsKey(key) && values2.containsKey(key)) {
+            if (Objects.equals(value1, value2)) {
+                keyData.put("status", "immutable");
+                keyData.put("value", value1);
+                keyData.put("valueIsComplex", isComplexValue(value1));
+            } else {
+                keyData.put("status", "updated");
+                keyData.put("oldValue", value1);
+                keyData.put("oldValueIsComplex", isComplexValue(value1));
+                keyData.put("newValue", value2);
+                keyData.put("newValueIsComplex", isComplexValue(value2));
+            }
+        } else if (values1.containsKey(key)) {
+            keyData.put("status", "removed");
+            keyData.put("value", value1);
+            keyData.put("valueIsComplex", isComplexValue(value1));
+        } else {
+            keyData.put("status", "added");
+            keyData.put("value", value2);
+            keyData.put("valueIsComplex", isComplexValue(value2));
+        }
+
+        return keyData;
     }
 }
