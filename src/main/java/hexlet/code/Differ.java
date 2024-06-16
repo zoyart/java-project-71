@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.io.IOException;
@@ -32,9 +31,9 @@ class Differ {
     }
 
     public static boolean isComplexValue(Object value) {
-        return value instanceof LinkedHashMap<?,?> ||
-                value instanceof LinkedList<?> ||
-                value instanceof ArrayList<?>;
+        return value instanceof LinkedHashMap<?, ?>
+                || value instanceof LinkedList<?>
+                || value instanceof ArrayList<?>;
     }
 
     public static Map<String, Object> generateKeyData(String key,

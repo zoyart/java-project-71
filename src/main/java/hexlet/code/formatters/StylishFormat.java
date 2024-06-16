@@ -23,8 +23,12 @@ public class StylishFormat {
                     builder.append("    ").append(key).append(": ").append(value).append("\n");
                     break;
                 case "updated":
-                    Object oldValue = (boolean) data.get("oldValueIsComplex") ? "[complex value]" : data.get("oldValue");
-                    Object newValue = (boolean) data.get("newValueIsComplex") ? "[complex value]" : data.get("newValue");
+                    Object oldValue = (boolean) data.get("oldValueIsComplex")
+                            ? "[complex value]"
+                            : data.get("oldValue");
+                    Object newValue = (boolean) data.get("newValueIsComplex")
+                            ? "[complex value]"
+                            : data.get("newValue");
                     builder.append("  - ").append(key).append(": ").append(oldValue).append("\n");
                     builder.append("  + ").append(key).append(": ").append(newValue).append("\n");
                     break;

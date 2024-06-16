@@ -14,12 +14,12 @@ public class TestDiffer {
 
         String expected1 = """
                 {
-                    chars1: [a, b, c]
+                    chars1: [complex value]
                   - default: null
                   + default: true
                   + id: null
-                    numbers1: [1, 2, 3, 4]
-                  + obj1: {nestedKey=value, isNested=true}
+                    numbers1: [complex value]
+                  + obj1: [complex value]
                   - setting1: Some value
                   + setting1: Another value
                   - setting2: 200
@@ -32,7 +32,7 @@ public class TestDiffer {
         String expected2 = """
                 Property 'default' was updated. From null to true
                 Property 'id' was added with value: 'null'
-                Property 'obj1' was added with value: '{nestedKey=value, isNested=true}'
+                Property 'obj1' was added with value: '[complex value]'
                 Property 'setting1' was updated. From Some value to Another value
                 Property 'setting2' was updated. From 200 to 300
                 Property 'setting3' was removed

@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.Getter;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;

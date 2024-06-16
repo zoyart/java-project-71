@@ -23,8 +23,12 @@ public class PlaneFormat {
                             .append("' was removed\n");
                     break;
                 case "updated":
-                    Object oldValue = (boolean) data.get("oldValueIsComplex") ? "[complex value]" : data.get("oldValue");
-                    Object newValue = (boolean) data.get("newValueIsComplex") ? "[complex value]" : data.get("newValue");
+                    Object oldValue = (boolean) data.get("oldValueIsComplex")
+                            ? "[complex value]"
+                            : data.get("oldValue");
+                    Object newValue = (boolean) data.get("newValueIsComplex")
+                            ? "[complex value]"
+                            : data.get("newValue");
                     builder.append("Property '")
                             .append(key)
                             .append("' was updated. From ")
