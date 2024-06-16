@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestDiffer {
     @Test
     public void generateTest() throws IOException {
-        String path1 = "src/test/resources/testData/file1.json";
-        String path2 = "src/test/resources/testData/file2.json";
+        String path1 = "src/test/resources/fixtures/file1.json";
+        String path2 = "src/test/resources/fixtures/file2.json";
 
         String expected1 = """
                 {

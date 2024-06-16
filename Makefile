@@ -11,27 +11,27 @@ checkstyle:
 
 run-dist-json-stylish:
 	./gradlew installDist
-	./build/install/app/bin/app src/test/resources/testData/file1.json src/test/resources/testData/file2.json
+	./build/install/app/bin/app src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
 
 run-dist-yml-stylish:
 	./gradlew installDist
-	./build/install/app/bin/app src/test/resources/testData/file1.yml src/test/resources/testData/file2.yml
+	./build/install/app/bin/app src/test/resources/fixtures/file1.yml src/test/resources/fixtures/file2.yml
 
 run-dist-json-plane:
 	./gradlew installDist
-	./build/install/app/bin/app -f plane src/test/resources/testData/file1.json src/test/resources/testData/file2.json
+	./build/install/app/bin/app -f plane src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
 
 run-dist-yml-plane:
 	./gradlew installDist
-	./build/install/app/bin/app -f plane src/test/resources/testData/file1.yml src/test/resources/testData/file2.yml
+	./build/install/app/bin/app -f plane src/test/resources/fixtures/file1.yml src/test/resources/fixtures/file2.yml
 
 run-dist-json-json:
 	./gradlew installDist
-	./build/install/app/bin/app -f json src/test/resources/testData/file1.json src/test/resources/testData/file2.json
+	./build/install/app/bin/app -f json src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
 
 run-dist-yml-json:
 	./gradlew installDist
-	./build/install/app/bin/app -f json src/test/resources/testData/file1.yml src/test/resources/testData/file2.yml
+	./build/install/app/bin/app -f json src/test/resources/fixtures/file1.yml src/test/resources/fixtures/file2.yml
 
 clean:
 	./gradlew clean

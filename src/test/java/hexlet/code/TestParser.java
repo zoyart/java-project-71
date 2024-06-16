@@ -23,21 +23,21 @@ public class TestParser {
         expected.put("default", null);
         expected.put("chars1", new ArrayList<>(List.of("a", "b", "c")));
 
-        Map<String, Object> actualJson = Parser.parse("src/test/resources/testData/file1.json");
+        Map<String, Object> actualJson = Parser.parse("src/test/resources/fixtures/file1.json");
         assertEquals(expected, actualJson);
 
-        Map<String, Object> actualYml = Parser.parse("src/test/resources/testData/file1.yml");
+        Map<String, Object> actualYml = Parser.parse("src/test/resources/fixtures/file1.yml");
         assertEquals(expected, actualYml);
     }
 
     @Test
     public void getFileExtensionTest() {
         String expected1 = "json";
-        String actual1 = Parser.getFileExtension("src/test/resources/testData/file1.json");
+        String actual1 = Parser.getFileExtension("src/test/resources/fixtures/file1.json");
         assertEquals(expected1, actual1);
 
         String expected2 = "yml";
-        String actual2 = Parser.getFileExtension("src/test/resources/testData/file1.yml");
+        String actual2 = Parser.getFileExtension("src/test/resources/fixtures/file1.yml");
         assertEquals(expected2, actual2);
     }
 
@@ -54,7 +54,7 @@ public class TestParser {
                 }""";
 
         // Test relative path
-        String relativePath = "src/test/resources/testData/file1.json";
+        String relativePath = "src/test/resources/fixtures/file1.json";
         String actual1 = Parser.getFileText(relativePath);
         assertEquals(expected1, actual1);
 
