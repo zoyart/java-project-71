@@ -7,20 +7,14 @@ public class PlaneFormat {
         StringBuilder builder = new StringBuilder();
         diffData.forEach((key, data) -> {
             String status = data.get("status").toString();
-
             switch (status) {
                 case "added":
                     Object value = (boolean) data.get("valueIsComplex") ? "[complex value]" : data.get("value");
-                    builder.append("Property '")
-                            .append(key)
-                            .append("' was added with value: '")
-                            .append(value)
+                    builder.append("Property '").append(key).append("' was added with value: '").append(value)
                             .append("'\n");
                     break;
                 case "removed":
-                    builder.append("Property '")
-                            .append(key)
-                            .append("' was removed\n");
+                    builder.append("Property '").append(key).append("' was removed\n");
                     break;
                 case "updated":
                     Object oldValue = (boolean) data.get("oldValueIsComplex")
@@ -29,10 +23,7 @@ public class PlaneFormat {
                     Object newValue = (boolean) data.get("newValueIsComplex")
                             ? "[complex value]"
                             : data.get("newValue");
-                    builder.append("Property '")
-                            .append(key)
-                            .append("' was updated. From ")
-                            .append(oldValue)
+                    builder.append("Property '").append(key).append("' was updated. From ").append(oldValue)
                             .append(" to ")
                             .append(newValue)
                             .append("\n");
@@ -40,7 +31,6 @@ public class PlaneFormat {
                 default:
             }
         });
-
         return builder.toString();
     }
 }
