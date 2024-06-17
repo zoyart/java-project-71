@@ -1,0 +1,12 @@
+{
+  "setting1": "Another value",
+  "setting2": 300,
+  "numbers1": [1, 2, 3, 4],
+  "id": null,
+  "default": true,
+  "chars1": ["a", "b", "c"],
+  "obj1": {
+    "nestedKey": "value",
+    "isNested": true
+  }
+}
