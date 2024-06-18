@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Comparator;
 import java.util.Objects;
 
-class Differ {
+public class Differ {
     public static String generate(String path1, String path2, String format) throws IOException,
                                                                                     IllegalArgumentException {
         Map<String, Object> values1 = Parser.parse(path1);

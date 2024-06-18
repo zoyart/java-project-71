@@ -14,7 +14,7 @@ import java.util.concurrent.Callable;
         version = "gendiff 1.0",
         description = "Compares two configuration files and shows a difference.")
 @Getter
-class App implements Callable<Integer> {
+public class App implements Callable<Integer> {
     @Parameters(paramLabel = "filePath1", description = "path to first file")
     String filePath1;
 
