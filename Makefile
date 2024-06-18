@@ -5,7 +5,7 @@ build:
 	make -C app ./gradlew build
 
 install:
-	make -C app ./gradlew clean install
+	make -C app ./gradlew clean installDist
 
 run:
 	make -C app ./gradlew run
