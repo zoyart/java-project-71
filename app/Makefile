@@ -25,4 +25,12 @@ lint:
 checkstyle:
 	./gradlew checkstyleMain
 
+run-dist-json-stylish:
+	./gradlew installDist
+	./build/install/app/bin/app src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
+
+run-dist-json-plane:
+	./gradlew installDist
+	./build/install/app/bin/app -f plane src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
+
 .PHONY: build
