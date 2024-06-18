@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="app.test" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.picocli/picocli-codegen/4.1.4/f0d2349bada14a86d4f6afdde3b7d697f9cb6a2b/picocli-codegen-4.1.4.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/4.1.4/e9ac7856611815391f85ac66c8ceadacb51250b5/picocli-4.1.4.jar" />
+        </processorPath>
+        <module name="app.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app" target="22" />
+      <module name="app.main" target="22" />
+      <module name="app.test" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
