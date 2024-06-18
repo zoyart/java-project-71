@@ -95,7 +95,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/artur/projects/small_projects/java-project-71/.github/workflows&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/artur/projects/small_projects/java-project-71&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -109,6 +109,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.github/workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -136,7 +137,7 @@
       <workItem from="1718618591222" duration="183000" />
       <workItem from="1718618871690" duration="4390000" />
       <workItem from="1718623299572" duration="1994000" />
-      <workItem from="1718681723609" duration="7744000" />
+      <workItem from="1718681723609" duration="10295000" />
     </task>
     <servers />
   </component>
