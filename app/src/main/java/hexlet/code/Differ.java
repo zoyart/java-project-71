@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import hexlet.code.formatters.Formatter;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.io.IOException;

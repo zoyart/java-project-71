@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import hexlet.code.utils.FileReader;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -31,13 +32,13 @@ public class TestParser {
     }
 
     @Test
-    public void getFileExtensionTest() {
+    public void getFileExtensionTest() throws IOException {
         String expected1 = "json";
-        String actual1 = Parser.getFileExtension("src/test/resources/fixtures/file1.json");
+        String actual1 = FileReader.getFileExtension("src/test/resources/fixtures/file1.json");
         assertEquals(expected1, actual1);
 
         String expected2 = "yml";
-        String actual2 = Parser.getFileExtension("src/test/resources/fixtures/file1.yml");
+        String actual2 = FileReader.getFileExtension("src/test/resources/fixtures/file1.yml");
         assertEquals(expected2, actual2);
     }
 
@@ -55,12 +56,12 @@ public class TestParser {
 
         // Test relative path
         String relativePath = "src/test/resources/fixtures/file1.json";
-        String actual1 = Parser.getFileText(relativePath);
+        String actual1 = FileReader.getFileText(relativePath);
         assertEquals(expected1, actual1);
 
         // Test absolute path
         String absolutePath = Paths.get(relativePath).toAbsolutePath().toString();
-        String actual2 = Parser.getFileText(absolutePath);
+        String actual2 = FileReader.getFileText(absolutePath);
         assertEquals(expected1, actual2);
 
         // We catch the IOException: file not found

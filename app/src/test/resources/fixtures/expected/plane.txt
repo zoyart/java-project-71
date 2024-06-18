@@ -1,0 +1,6 @@
+Property 'default' was updated. From null to true
+Property 'id' was added with value: 'null'
+Property 'obj1' was added with value: '[complex value]'
+Property 'setting1' was updated. From Some value to Another value
+Property 'setting2' was updated. From 200 to 300
+Property 'setting3' was removed

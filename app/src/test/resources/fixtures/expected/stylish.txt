@@ -1,0 +1,13 @@
+{
+    chars1: [complex value]
+  - default: null
+  + default: true
+  + id: null
+    numbers1: [complex value]
+  + obj1: [complex value]
+  - setting1: Some value
+  + setting1: Another value
+  - setting2: 200
+  + setting2: 300
+  - setting3: true
+}
