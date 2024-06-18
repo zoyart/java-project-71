@@ -1,11 +1,13 @@
+.DEFAULT_GOAL := build-run
+
 clean:
 	./gradlew clean
 
 build:
-	./gradlew build
+	./gradlew clean build
 
 installDist:
-	./gradlew installDist
+	./gradlew clean installDist
 
 run:
 	./gradlew run
@@ -19,9 +21,6 @@ report:
 
 lint:
 	./gradlew checkstyleMain checkstyleTest
-
-update-deps:
-	./gradlew useLatestVersions
 
 checkstyle:
 	./gradlew checkstyleMain
