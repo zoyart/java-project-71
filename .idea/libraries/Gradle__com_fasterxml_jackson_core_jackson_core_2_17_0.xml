@@ -8,6 +8,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.17.0/a6e5058ef9720623c517252d17162f845306ff3a/jackson-core-2.17.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.17.0/7e3408d602e036a52ba6a40d5e1ba76fb61b644c/jackson-core-2.17.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
