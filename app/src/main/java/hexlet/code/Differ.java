@@ -31,6 +31,11 @@ public class Differ {
         return Formatter.format(differData, format);
     }
 
+    public static String generate(String path1, String path2) throws IOException,
+            IllegalArgumentException {
+        return generate(path1, path2, "stylish");
+    }
+
     public static boolean isComplexValue(Object value) {
         return value instanceof LinkedHashMap<?, ?>
                 || value instanceof LinkedList<?>
