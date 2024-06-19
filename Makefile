@@ -31,4 +31,7 @@ run-dist-json-stylish:
 run-dist-json-plane:
 	make -C app run-dist-json-plane
 
+run-dist-json-json:
+	make -C app run-dist-json-json
+
 .PHONY: build

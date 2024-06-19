@@ -1,6 +1,12 @@
-"setting1": "Some value"
-"setting2": 200
-"setting3": true
-"numbers1": [1, 2, 3, 4]
-"default": null
-"chars1": ["a", "b", "c"]
+"setting1": "Some value",
+"setting2": 200,
+"setting3": true,
+"key1": "value1",
+"numbers1": [1, 2, 3, 4],
+"numbers2": [2, 3, 4, 5],
+"id": 45,
+"default": null,
+"checked": false,
+"numbers3": [3, 4, 5],
+"chars1": ["a", "b", "c"],
+"chars2": ["d", "e", "f"]

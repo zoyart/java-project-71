@@ -1,12 +1,12 @@
 package hexlet.code.formatters;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import hexlet.code.differ.Node;
 
-import java.util.Map;
+import java.io.IOException;
+import java.util.TreeMap;
 
 public class Formatter {
-    public static String format(Map<String, Map<String, Object>> diffData, String format) throws
-            IllegalArgumentException, JsonProcessingException {
+    public static String format(TreeMap<String, Node> diffData, String format) throws IOException {
         return switch (format) {
             case "stylish" -> StylishFormat.generate(diffData);
             case "plane" -> PlaneFormat.generate(diffData);

@@ -1,31 +1,36 @@
 package hexlet.code.formatters;
 
-import java.util.Map;
+import hexlet.code.differ.Node;
+import hexlet.code.differ.OperationType;
+
+import java.util.TreeMap;
 
 public class StylishFormat {
-    public static String generate(Map<String, Map<String, Object>> diffData) {
+    private static final String PLUS_PREFIX = "  + ";
+    private static final String MINUS_PREFIX = "  - ";
+    private static final String UNCHANGED_PREFIX = "    ";
+
+    public static String generate(TreeMap<String, Node> diffData) {
         StringBuilder builder = new StringBuilder();
         builder.append("{\n");
-        diffData.forEach((key, data) -> {
-            String status = data.get("status").toString();
-            Object value = (boolean) data.getOrDefault("valueIsComplex", false)
-                    ? "[complex value]"
-                    : data.get("value");
-            switch (status) {
-                case "added":
-                    builder.append("  + ").append(key).append(": ").append(value).append("\n");
+        diffData.forEach((key, node) -> {
+            OperationType type = node.getType();
+            Object oldValue = node.getOldValue();
+            Object newValue = node.getNewValue();
+
+            switch (type) {
+                case OperationType.ADDED:
+                    appendChange(builder, PLUS_PREFIX, key, newValue);
                     break;
-                case "removed":
-                    builder.append("  - ").append(key).append(": ").append(value).append("\n");
+                case OperationType.DELETED:
+                    appendChange(builder, MINUS_PREFIX, key, oldValue);
                     break;
-                case "immutable":
-                    builder.append("    ").append(key).append(": ").append(value).append("\n");
+                case OperationType.UNCHANGED:
+                    appendChange(builder, UNCHANGED_PREFIX, key, newValue);
                     break;
-                case "updated":
-                    Object oldV = (boolean) data.get("oldValueIsComplex") ? "[complex value]" : data.get("oldValue");
-                    Object newV = (boolean) data.get("newValueIsComplex") ? "[complex value]" : data.get("newValue");
-                    builder.append("  - ").append(key).append(": ").append(oldV).append("\n");
-                    builder.append("  + ").append(key).append(": ").append(newV).append("\n");
+                case OperationType.UPDATED:
+                    appendChange(builder, MINUS_PREFIX, key, oldValue);
+                    appendChange(builder, PLUS_PREFIX, key, newValue);
                     break;
                 default:
                     break;
@@ -34,5 +39,9 @@ public class StylishFormat {
         builder.append("}");
 
         return builder.toString();
+    }
+
+    private static void appendChange(StringBuilder builder, String prefix, String key, Object value) {
+        builder.append(prefix).append(key).append(": ").append(value).append("\n");
     }
 }

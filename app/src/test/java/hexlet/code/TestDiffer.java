@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import hexlet.code.differ.Differ;
 import hexlet.code.utils.FileReader;
 import org.junit.jupiter.api.Test;
 
@@ -20,5 +21,9 @@ public class TestDiffer {
         String expected2 = FileReader.getFileText("src/test/resources/fixtures/expected/plane.txt");
         String actual2 = Differ.generate(path1, path2, "plane");
         assertEquals(expected2, actual2);
+
+        String expected3 = FileReader.getFileText("src/test/resources/fixtures/expected/json.json");
+        String actual3 = Differ.generate(path1, path2, "json");
+        assertEquals(expected3, actual3);
     }
 }

@@ -1,10 +1,16 @@
 {
   "setting1": "Another value",
   "setting2": 300,
+  "setting3": "none",
+  "key2": "value2",
   "numbers1": [1, 2, 3, 4],
+  "numbers2": [22, 33, 44, 55],
   "id": null,
-  "default": true,
+  "default": ["value1", "value2"],
+  "checked": true,
+  "numbers4": [4, 5, 6],
   "chars1": ["a", "b", "c"],
+  "chars2": false,
   "obj1": {
     "nestedKey": "value",
     "isNested": true
