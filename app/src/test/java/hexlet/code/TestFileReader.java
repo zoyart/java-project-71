@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FileReaderTest {
+public class TestFileReader {
     @Test
     public void getFileExtensionTest() throws IOException {
         String expected1 = "json";
