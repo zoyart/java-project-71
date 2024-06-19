@@ -27,21 +27,27 @@ public class PlaneFormat {
                 case OperationType.UPDATED:
                     appendUpdated(builder, key, newValue, oldValue);
                     break;
+                case OperationType.UNCHANGED:
+                    break;
                 default:
-                    // Default is empty because operationType has UNCHANGED, and default will respond to it
+                    throw new IllegalStateException("Unexpected value: " + type);
+            }
+
+            if (diffData.headMap(key).size() + 1 != diffData.size() && type != OperationType.UNCHANGED) {
+                builder.append("\n");
             }
         });
+
         return builder.toString();
     }
 
     private static void appendAdded(StringBuilder builder, String key, Object newValue) {
         builder.append(PROPERTY_PREFIX).append(key).append("' was added with value: ");
         appendValueWithQuotesIfNeeded(builder, newValue);
-        builder.append("\n");
     }
 
     private static void appendDeleted(StringBuilder builder, String key) {
-        builder.append(PROPERTY_PREFIX).append(key).append("' was removed\n");
+        builder.append(PROPERTY_PREFIX).append(key).append("' was removed");
     }
 
     private static void appendUpdated(StringBuilder builder, String key, Object newValue, Object oldValue) {
@@ -49,7 +55,6 @@ public class PlaneFormat {
         appendValueWithQuotesIfNeeded(builder, oldValue);
         builder.append(" to ");
         appendValueWithQuotesIfNeeded(builder, newValue);
-        builder.append("\n");
     }
 
     public static void appendValueWithQuotesIfNeeded(StringBuilder builder, Object value) {
