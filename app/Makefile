@@ -29,9 +29,9 @@ run-dist-json-stylish:
 	./gradlew installDist
 	./build/install/app/bin/app src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
 
-run-dist-json-plane:
+run-dist-json-plain:
 	./gradlew installDist
-	./build/install/app/bin/app -f plane src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
+	./build/install/app/bin/app -f plain src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
 
 run-dist-json-json:
 	./gradlew installDist

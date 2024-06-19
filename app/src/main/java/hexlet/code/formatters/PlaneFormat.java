@@ -14,12 +14,8 @@ public class PlaneFormat {
         StringBuilder builder = new StringBuilder();
         diffData.forEach((key, node) -> {
             OperationType type = node.getType();
-            Object oldValue = CustomUtils.isComplexValue(node.getOldValue())
-                    ? COMPLEX_VALUE
-                    : "'" + node.getOldValue() + "'";
-            Object newValue = CustomUtils.isComplexValue(node.getNewValue())
-                    ? COMPLEX_VALUE
-                    : "'" + node.getNewValue() + "'";
+            Object oldValue = CustomUtils.isComplexValue(node.getOldValue()) ? COMPLEX_VALUE : node.getOldValue();
+            Object newValue = CustomUtils.isComplexValue(node.getNewValue()) ? COMPLEX_VALUE : node.getNewValue();
 
             switch (type) {
                 case OperationType.ADDED:
@@ -39,26 +35,28 @@ public class PlaneFormat {
     }
 
     private static void appendAdded(StringBuilder builder, String key, Object newValue) {
-        builder.append(PROPERTY_PREFIX)
-                .append(key)
-                .append("' was added with value: ")
-                .append(newValue)
-                .append("\n");
+        builder.append(PROPERTY_PREFIX).append(key).append("' was added with value: ");
+        appendValueWithQuotesIfNeeded(builder, newValue);
+        builder.append("\n");
     }
 
     private static void appendDeleted(StringBuilder builder, String key) {
-        builder.append(PROPERTY_PREFIX)
-                .append(key)
-                .append("' was removed\n");
+        builder.append(PROPERTY_PREFIX).append(key).append("' was removed\n");
     }
 
     private static void appendUpdated(StringBuilder builder, String key, Object newValue, Object oldValue) {
-        builder.append(PROPERTY_PREFIX)
-                .append(key)
-                .append("' was updated. From ")
-                .append(oldValue)
-                .append(" to ")
-                .append(newValue)
-                .append("\n");
+        builder.append(PROPERTY_PREFIX).append(key).append("' was updated. From ");
+        appendValueWithQuotesIfNeeded(builder, oldValue);
+        builder.append(" to ");
+        appendValueWithQuotesIfNeeded(builder, newValue);
+        builder.append("\n");
+    }
+
+    public static void appendValueWithQuotesIfNeeded(StringBuilder builder, Object value) {
+        if (value instanceof String && !value.equals("[complex value]")) {
+            builder.append("'").append(value).append("'");
+        } else {
+            builder.append(value);
+        }
     }
 }

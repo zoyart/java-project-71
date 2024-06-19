@@ -18,7 +18,7 @@ public class TestDiffer {
         assertEquals(expected1, actual1);
 
         String expected2 = FileReader.getFileText("src/test/resources/fixtures/expected/plane.txt");
-        String actual2 = Differ.generate(path1, path2, "plane");
+        String actual2 = Differ.generate(path1, path2, "plain");
         assertEquals(expected2, actual2);
 
         String expected3 = FileReader.getFileText("src/test/resources/fixtures/expected/json.json");
