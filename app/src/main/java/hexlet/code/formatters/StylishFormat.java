@@ -1,7 +1,7 @@
 package hexlet.code.formatters;
 
-import hexlet.code.differ.Node;
-import hexlet.code.differ.OperationType;
+import hexlet.code.Node;
+import hexlet.code.OperationType;
 
 import java.util.TreeMap;
 
@@ -33,7 +33,6 @@ public class StylishFormat {
                     appendChange(builder, PLUS_PREFIX, key, newValue);
                     break;
                 default:
-                    break;
             }
         });
         builder.append("}");

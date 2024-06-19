@@ -1,7 +1,5 @@
 package hexlet.code;
 
-import hexlet.code.differ.Parser;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

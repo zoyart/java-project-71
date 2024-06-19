@@ -2,8 +2,8 @@ package hexlet.code.formatters;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hexlet.code.differ.Node;
-import hexlet.code.differ.OperationType;
+import hexlet.code.Node;
+import hexlet.code.OperationType;
 
 import java.util.EnumMap;
 import java.util.LinkedList;

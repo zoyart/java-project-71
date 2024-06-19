@@ -1,6 +1,6 @@
 package hexlet.code.formatters;
 
-import hexlet.code.differ.Node;
+import hexlet.code.Node;
 
 import java.io.IOException;
 import java.util.TreeMap;

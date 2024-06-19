@@ -1,7 +1,7 @@
 package hexlet.code.formatters;
 
-import hexlet.code.differ.Node;
-import hexlet.code.differ.OperationType;
+import hexlet.code.Node;
+import hexlet.code.OperationType;
 import hexlet.code.utils.CustomUtils;
 
 import java.util.TreeMap;

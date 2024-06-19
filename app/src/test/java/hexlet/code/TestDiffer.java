@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import hexlet.code.differ.Differ;
 import hexlet.code.utils.FileReader;
 import org.junit.jupiter.api.Test;
 
