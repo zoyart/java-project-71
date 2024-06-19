@@ -9,7 +9,7 @@ public class Formatter {
     public static String format(TreeMap<String, Node> diffData, String format) throws IOException {
         return switch (format) {
             case "stylish" -> StylishFormat.generate(diffData);
-            case "plane" -> PlaneFormat.generate(diffData);
+            case "plain" -> PlaneFormat.generate(diffData);
             case "json" -> JsonFormat.generate(diffData);
             default -> throw new IllegalArgumentException("Unsupported format: " + format);
         };
