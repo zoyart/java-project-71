@@ -10,6 +10,12 @@ public class StylishFormat {
     private static final String MINUS_PREFIX = "  - ";
     private static final String UNCHANGED_PREFIX = "    ";
 
+    /**
+     * Метод генерирует текст в формате stylish.
+     *
+     * @param diffData данные для генерации
+     * @return текст в формате stylish
+     */
     public static String generate(TreeMap<String, Node> diffData) {
         StringBuilder builder = new StringBuilder();
         builder.append("{\n");

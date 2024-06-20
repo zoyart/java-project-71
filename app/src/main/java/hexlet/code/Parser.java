@@ -8,6 +8,14 @@ import java.io.IOException;
 import java.util.Map;
 
 public class Parser {
+    /**
+     * Метод преобразует текст файла в Map.
+     * Поддерживаемые форматы для чтения: .json, .yml .
+     *
+     * @param filePath путь до файла
+     * @return возвращает данные в формате Map
+     * @throws IOException при проблеме с сериализацией
+     */
     public static Map<String, Object> parseInMap(String filePath) throws IOException {
         String text = FileReader.getFileText(filePath);
         String fileExtension = FileReader.getFileExtension(filePath);

@@ -5,45 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f296e1f-908c-4db9-97d3-051e4a04392a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/differ/Differ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/utils/CustomUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/hexlet/code/FileReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/readFile1Json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_17_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_17_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_17_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_17_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__info_picocli_picocli_4_7_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_14_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/hexlet/code/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/differ/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/Formatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/JsonFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/JsonFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/PlaneFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/PlaneFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/PlaneFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/PlainFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/StylishFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/formatters/StylishFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/hexlet/code/TestDiffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hexlet/code/TestDiffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/hexlet/code/TestParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hexlet/code/TestParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/json.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/json.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/plane.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/plane.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/stylish.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/stylish.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file1.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/file1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/hexlet/code/TestFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/plane.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/expected/plain.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/file1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file2.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/file2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/file2.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,24 +87,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/artur/projects/small_projects/java-project-71/app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/artur/projects/small_projects/battleship2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -177,7 +155,11 @@
       <workItem from="1718770059571" duration="67000" />
       <workItem from="1718770141496" duration="26000" />
       <workItem from="1718770244326" duration="61000" />
-      <workItem from="1718770408876" duration="16669000" />
+      <workItem from="1718770408876" duration="21940000" />
+      <workItem from="1718802535156" duration="10623000" />
+      <workItem from="1718813571712" duration="73000" />
+      <workItem from="1718813652369" duration="1225000" />
+      <workItem from="1718854862793" duration="5270000" />
     </task>
     <servers />
   </component>

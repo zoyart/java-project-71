@@ -28,8 +28,8 @@ checkstyle:
 run-dist-json-stylish:
 	make -C app run-dist-json-stylish
 
-run-dist-json-plane:
-	make -C app run-dist-json-plane
+run-dist-json-plain:
+	make -C app run-dist-json-plain
 
 run-dist-json-json:
 	make -C app run-dist-json-json

@@ -6,10 +6,17 @@ import hexlet.code.utils.CustomUtils;
 
 import java.util.TreeMap;
 
-public class PlaneFormat {
+public class PlainFormat {
     private static final String COMPLEX_VALUE = "[complex value]";
     private static final String PROPERTY_PREFIX = "Property '";
 
+    /**
+     * Метод генерирует текст в формате plain.
+     *
+     * @param diffData данные для генерации
+     * @return текст в формате plain
+     * @throws IllegalStateException если не найдено элемента в OperationType
+     */
     public static String generate(TreeMap<String, Node> diffData) throws IllegalStateException {
         StringBuilder builder = new StringBuilder();
         diffData.forEach((key, node) -> {
@@ -57,6 +64,13 @@ public class PlaneFormat {
         appendValueWithQuotesIfNeeded(builder, newValue);
     }
 
+    /**
+     * Метод добавляет одинарные кавычки к передаваемому value, если значение является строкой.
+     * Исключения: строка "[complex value]".
+     *
+     * @param builder StringBuilder с которым необходимо произвести операцию
+     * @param value значение над которым необходимо произвести операцию
+     */
     public static void appendValueWithQuotesIfNeeded(StringBuilder builder, Object value) {
         if (value instanceof String && !value.equals("[complex value]")) {
             builder.append("'").append(value).append("'");
