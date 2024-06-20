@@ -45,6 +45,3 @@ Json is generated in the following format:
   ]
 }
 ```
-### How do I specify the format?
-Just specify the "-f" flag.
-Example: "-f plain"
