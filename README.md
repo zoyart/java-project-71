@@ -1,20 +1,6 @@
 ### **STATUSES**:
 [![Actions Status](https://github.com/zoyart/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zoyart/java-project-71/actions) [![Actions Status](https://github.com/zoyart/java-project-71/actions/workflows/makefile.yml/badge.svg)](https://github.com/zoyart/java-project-71/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/4a8a2accd783a1122f43/maintainability)](https://codeclimate.com/github/zoyart/java-project-71/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4a8a2accd783a1122f43/test_coverage)](https://codeclimate.com/github/zoyart/java-project-71/test_coverage)
 # Why is it needed?
-The program compares two **“json”** or **"yml"** documents and displays a report in one of the selected formats.
-# Usage
-[![asciicast](https://asciinema.org/a/Ngd1qBxXSLBxyhFY6loanGieI.svg)](https://asciinema.org/a/Ngd1qBxXSLBxyhFY6loanGieI)
-## Params
-When starting the program, you must specify two mandatory parameters - the path to the first and second files that need to be compared.
-## Available formats
-### stylish - used by default;
-1. If the parameter does not have a prefix, it means that it has not changed;
-2. "+ name: Artur"
-   This means that the parameter was added in the second file.
-3. This means that the parameter has been changed
-### **STATUSES**:
-[![Actions Status](https://github.com/zoyart/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zoyart/java-project-71/actions) [![Actions Status](https://github.com/zoyart/java-project-71/actions/workflows/makefile.yml/badge.svg)](https://github.com/zoyart/java-project-71/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/4a8a2accd783a1122f43/maintainability)](https://codeclimate.com/github/zoyart/java-project-71/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4a8a2accd783a1122f43/test_coverage)](https://codeclimate.com/github/zoyart/java-project-71/test_coverage)
-# Why is it needed?
 The program compares two “json” or "yml" documents and displays a report in one of the selected formats.
 # Usage
 [![asciicast](https://asciinema.org/a/sVzHlEFoaa2eajuiVUIx1qbNi.svg)](https://asciinema.org/a/sVzHlEFoaa2eajuiVUIx1qbNi)
