@@ -6,9 +6,10 @@ import hexlet.code.utils.CustomUtils;
 
 import java.util.TreeMap;
 
-public class PlainFormat {
+public class PlainFormat implements Format {
     private static final String COMPLEX_VALUE = "[complex value]";
     private static final String PROPERTY_PREFIX = "Property '";
+    public static final String PLAIN_NAME = "plain";
 
     /**
      * Метод генерирует текст в формате plain.
@@ -17,7 +18,7 @@ public class PlainFormat {
      * @return текст в формате plain
      * @throws IllegalStateException если не найдено элемента в OperationType
      */
-    public static String generate(TreeMap<String, Node> diffData) throws IllegalStateException {
+    public String generate(TreeMap<String, Node> diffData) throws IllegalStateException {
         StringBuilder builder = new StringBuilder();
         diffData.forEach((key, node) -> {
             OperationType type = node.getType();

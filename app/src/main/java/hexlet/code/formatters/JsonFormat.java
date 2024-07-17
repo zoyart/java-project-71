@@ -11,7 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class JsonFormat {
+public class JsonFormat implements Format {
+    public static final String JSON_NAME = "json";
+
     /**
      * Метод генерирует json текст.
      *
@@ -19,7 +21,7 @@ public class JsonFormat {
      * @return json
      * @throws JsonProcessingException при ошибке сериализации
      */
-    public static String generate(TreeMap<String, Node> diffData) throws JsonProcessingException {
+    public String generate(TreeMap<String, Node> diffData) throws JsonProcessingException {
         Map<OperationType, List<Node>> nodesByType = new EnumMap<>(OperationType.class);
         ObjectMapper mapper = new ObjectMapper();
 
